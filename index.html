@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="description" content="Zalando Tech Radar: a tool to visualize technology choices, inspire and support Engineering teams at Zalando to pick the best technologies for new projects">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Implex1v's Tech Radar</title>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="radar.js"></script>
+
+<link rel="stylesheet" href="radar.css">
+</head>
+
+<body>
+
+<svg id="radar"></svg>
+
+<script>
+radar_visualization({
+  svg_id: "radar",
+  width: 1450,
+  height: 1000,
+  colors: {
+    background: "#fff",
+    grid: "#bbb",
+    inactive: "#ddd"
+  },
+  title: "Implex1v's Tech Radar — 2022",
+  quadrants: [
+    { name: "Languages" },
+    { name: "Infrastructure" },
+    { name: "Datastores" },
+    { name: "Data Management" },
+  ],
+  rings: [
+    { name: "ADOPT", color: "#93c47d" },
+    { name: "TRIAL", color: "#93d2c2" },
+    { name: "ASSESS", color: "#fbdb84" },
+    { name: "HOLD", color: "#efafa9" }
+  ],
+  print_layout: true,
+  // zoomed_quadrant: 0,
+  //ENTRIES
+  entries: [
+      {
+        "quadrant": 0,
+        "ring": 0,
+        "label": "Kotlin",
+        "active": true,
+        "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 0,
+          "label": "TypeScript",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 3,
+          "label": "Java",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 3,
+          "label": "PHP",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 3,
+          "label": "JavaScript",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 1,
+          "label": "C#",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 3,
+          "label": "Python (Full-Stack)",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 0,
+          "label": "Python (scripting)",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 1,
+          "label": "Golang",
+          "active": true,
+          "moved": 0
+      },
+      {
+          "quadrant": 0,
+          "ring": 2,
+          "label": "Rust",
+          "active": true,
+          "moved": 0
+      },
+    ]
+  //ENTRIES
+});
+</script>
+
+<table>
+<tr>
+<td>
+
+<h3>What is the Tech Radar?</h3>
+
+<p>
+Implex1v Tech Radar is a list of technologies, complemented by an assessment result, called <em>ring assignment</em>. I use the four rings with the following semantics:
+</p>
+
+<ul>
+<li><strong>ADOPT</strong> &mdash; TODO </li>
+<li><strong>TRIAL</strong> &mdash; TODO</li>
+<li><strong>ASSESS</strong> &mdash; TODO</li>
+<li><strong>HOLD</strong> &mdash; TODO</li>
+</ul>
+
+</td><td>
+
+<h3>What is the purpose?</h3>
+
+<p>
+The Tech Radar is a tool to visualize my current knowledge status in regard to the four quadrants. This is not meant to be a recommendation, but simply my current state.
+</p>
+
+
+<p>
+<em>BTW, if you would like to create your own Tech Radar &mdash; the code is <a href="https://github.com/zalando/tech-radar">open sourced</a> by Zalando.</em>
+</p>
+
+</td></tr>
+</table>
+
+</body>
+</html>
